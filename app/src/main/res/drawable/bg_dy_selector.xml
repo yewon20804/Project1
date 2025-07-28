@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 선택된 상태일 때 -->
+    <item android:state_selected="true">
+        <shape android:shape="oval">
+            <solid android:color="#1CD282" />
+        </shape>
+    </item>
+
+    <!-- 선택되지 않은 기본 상태 -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#2C2C2C" />
+        </shape>
+    </item>
+</selector>

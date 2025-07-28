@@ -1,19 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#111111">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <!-- 상태바 -->
+    <View
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="#000000" />
+
+    <!-- 상단바 -->
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_below="@id/statusBar"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/app_name"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical" />
+
+        <ImageView
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_add"
+            android:contentDescription="@string/add_subject_description" />
+    </RelativeLayout>
+
+    <!-- 요일 헤더 -->
+    <LinearLayout
+        android:id="@+id/dayHeader"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/topBar"
+        android:orientation="horizontal"
+        android:paddingHorizontal="12dp"
+        android:weightSum="6">
+
+        <!-- 시간 열 (비어있음) -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="#666666"
+            android:gravity="center" />
+
+        <TextView android:text="@string/mon" style="@style/WeekdayStyle" />
+        <TextView android:text="@string/tue" style="@style/WeekdayStyle" />
+        <TextView android:text="@string/wed" style="@style/WeekdayStyle" />
+        <TextView android:text="@string/thu" style="@style/WeekdayStyle" />
+        <TextView android:text="@string/fri" style="@style/WeekdayStyle" />
+    </LinearLayout>
+
+    <!-- 시간표 영역 (왼쪽 라벨 + 오른쪽 timetableGrid) -->
+    <LinearLayout
+        android:id="@+id/timetableWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/dayHeader"
+        android:layout_above="@id/bottomNav"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp">
+
+        <!-- 시간 라벨 -->
+        <LinearLayout
+            android:id="@+id/timeLabels"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- 9시 ~ 6시 -->
+            <TextView android:text="9" style="@style/TimeLabelStyle"/>
+            <TextView android:text="10" style="@style/TimeLabelStyle"/>
+            <TextView android:text="11" style="@style/TimeLabelStyle"/>
+            <TextView android:text="12" style="@style/TimeLabelStyle"/>
+            <TextView android:text="1" style="@style/TimeLabelStyle"/>
+            <TextView android:text="2" style="@style/TimeLabelStyle"/>
+            <TextView android:text="3" style="@style/TimeLabelStyle"/>
+            <TextView android:text="4" style="@style/TimeLabelStyle"/>
+            <TextView android:text="5" style="@style/TimeLabelStyle"/>
+            <TextView android:text="6" style="@style/TimeLabelStyle"/>
+        </LinearLayout>
+
+        <!-- 시간표 Grid -->
+        <GridLayout
+            android:id="@+id/timetableGrid"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:columnCount="6"
+            android:rowCount="36"
+            android:orientation="horizontal"
+            android:alignmentMode="alignMargins"
+            android:useDefaultMargins="false"
+            android:layout_gravity="fill"
+            android:background="#222222" />
+
+
+    </LinearLayout>
+
+    <!-- 하단 네비게이션 -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        app:menu="@menu/bottom_nav_menu"
+        app:labelVisibilityMode="labeled" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

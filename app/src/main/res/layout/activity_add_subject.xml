@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#121212">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 상단 툴바 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="#000000">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_arrow_back"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/back"
+                app:tint="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="과목 추가"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/btnBack"
+                android:layout_marginStart="12dp"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/btnSaveSubject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="완료"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="4dp" />
+        </RelativeLayout>
+
+        <!-- 과목명 입력 -->
+        <TextView
+            android:text="과목명"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/etSubjectName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="과목명"
+            android:background="@drawable/bg_edittext"
+            android:textColorHint="#BBBBBB"
+            android:textColor="#FFFFFF"
+            android:padding="12dp" />
+
+        <!-- 요일 선택 -->
+        <TextView
+            android:text="요일"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+            <TextView
+                android:id="@+id/btnMon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:text="월"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/bg_dy_selector"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/btnTue"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:text="화"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/bg_dy_selector"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/btnWed"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:text="수"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/bg_dy_selector"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/btnThu"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:text="목"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/bg_dy_selector"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/btnFri"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:text="금"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/bg_dy_selector"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:text="시간"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvStartTime"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edittext"
+                android:gravity="center"
+                android:text="오전 9:00"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:text="-"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:paddingHorizontal="12dp" />
+
+            <TextView
+                android:id="@+id/tvEndTime"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edittext"
+                android:gravity="center"
+                android:text="오전 10:00"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- 색상 선택 -->
+        <TextView
+            android:text="색상"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="8dp">
+
+            <View
+                android:id="@+id/colorRed"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:backgroundTint="#FF3B30"
+                android:background="@drawable/bg_color_circle"
+                android:layout_margin="4dp" />
+
+            <View
+                android:id="@+id/colorOrange"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:backgroundTint="#FF922C"
+                android:background="@drawable/bg_color_circle"
+                android:layout_margin="4dp" />
+
+            <View
+                android:id="@+id/colorYellow"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:backgroundTint="#FFFF1D"
+                android:background="@drawable/bg_color_circle"
+                android:layout_margin="4dp" />
+
+            <View
+                android:id="@+id/colorGreen"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:backgroundTint="#1CD282"
+                android:background="@drawable/bg_color_circle"
+                android:layout_margin="4dp" />
+
+            <View
+                android:id="@+id/colorSky"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:backgroundTint="#20DEF0"
+                android:background="@drawable/bg_color_circle"
+                android:layout_margin="4dp" />
+
+            <View
+                android:id="@+id/colorBlue"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:backgroundTint="#415AFE"
+                android:background="@drawable/bg_color_circle"
+                android:layout_margin="4dp" />
+
+            <View
+                android:id="@+id/colorPurple"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:backgroundTint="#BD59FF"
+                android:background="@drawable/bg_color_circle"
+                android:layout_margin="4dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
