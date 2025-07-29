@@ -22,6 +22,6 @@
     <string name="save">완료</string>
     <string name="back">뒤로가기</string>
     <string name="add_subject_description">과목 추가</string>
-
+    <string name="timetable_scroll_area">시간표 스크롤 영역</string>
 
 </resources>

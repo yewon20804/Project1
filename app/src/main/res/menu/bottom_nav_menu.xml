@@ -3,22 +3,22 @@
 
     <item
         android:id="@+id/nav_timetable"
-        android:icon="@drawable/timetable"
+        android:icon="@drawable/timetable_selector"
         android:title="시간표" />
 
     <item
         android:id="@+id/nav_calendar"
-        android:icon="@drawable/calendar"
+        android:icon="@drawable/calendar_selector"
         android:title="캘린더" />
 
     <item
         android:id="@+id/nav_timer"
-        android:icon="@drawable/timer"
+        android:icon="@drawable/timer_selector"
         android:title="타이머" />
 
     <item
         android:id="@+id/nav_statistic"
-        android:icon="@drawable/statistic"
+        android:icon="@drawable/statistic_selector"
         android:title="통계" />
 
 </menu>

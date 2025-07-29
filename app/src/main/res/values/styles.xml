@@ -30,12 +30,20 @@
     </style>
 
     <style name="TimeLabelStyle">
-        <item name="android:layout_width">40dp</item>
-        <item name="android:layout_height">0dp</item>
-        <item name="android:layout_weight">1</item>
-        <item name="android:gravity">center</item>
-        <item name="android:textColor">#888888</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:gravity">center_vertical|end</item>
+        <item name="android:paddingEnd">4dp</item>
+        <item name="android:textColor">#AAAAAA</item>
         <item name="android:textSize">12sp</item>
     </style>
+
+
+    <style name="TimeDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#444444</item>
+    </style>
+
 
 </resources>

@@ -4,13 +4,12 @@ import java.io.Serializable
 
 data class Subject(
     val name: String,
-    val day: Int,
+    val days: List<Int>,
     val color: Int,
     val startHour: Int,
     val startMinute: Int,
     val endHour: Int,
     val endMinute: Int,
-    val span: Int
 ) : Serializable
 
 
