@@ -83,7 +83,7 @@ class TimerActivity : AppCompatActivity() {
         bottomNavigation.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_schedule -> {
-//                    startActivity(Intent(this, ScheduleActivity::class.java))
+                    startActivity(Intent(this, MainActivity::class.java))
                     true
                 }
                 R.id.nav_calendar -> {

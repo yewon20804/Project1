@@ -16,6 +16,7 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.ConstraintSet
 import androidx.core.content.ContextCompat
 import androidx.core.view.children
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
 
@@ -64,6 +65,35 @@ class MainActivity : AppCompatActivity() {
         btnAdd.setOnClickListener {
             val intent = Intent(this, AddSubjectActivity::class.java)
             addSubjectLauncher.launch(intent)
+        }
+
+        // 네비게이션 바 _ 추가 했습니다 !
+        val bottomNavigation = findViewById<BottomNavigationView>(R.id.bottom_navigation)
+        bottomNavigation.selectedItemId = R.id.nav_schedule
+
+        bottomNavigation.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.nav_schedule -> {
+                    // 현재 화면
+                    true
+                }
+                R.id.nav_calendar -> {
+//                    startActivity(Intent(this, CalendarActivity::class.java))
+                    overridePendingTransition(0, 0)
+                    true
+                }
+                R.id.nav_timer -> {
+                    startActivity(Intent(this, TimerActivity::class.java))
+                    overridePendingTransition(0, 0)
+                    true
+                }
+                R.id.nav_stats -> {
+                    startActivity(Intent(this, StatisticsActivity::class.java))
+                    overridePendingTransition(0, 0)
+                    true
+                }
+                else -> false
+            }
         }
     }
 
