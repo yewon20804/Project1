@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="gray00">#FFFFFFFF</color>
+    <color name="gray10">#B4BDB6</color>
+    <color name="gray40">#657770</color>
+    <color name="gray50">#545B49</color>
+    <color name="gray60">#2D322E</color>
+    <color name="gray70">#1F241F</color>
+    <color name="primary50">#A8ECC8</color>
+    <color name="primary60">#81E4B0</color>
+    <color name="primary70">#1CD282</color>
+    <color name="primary80">#297453</color>
+    <color name="chip1">#F24C4F</color>
+    <color name="chip2">#FF922C</color>
+    <color name="chip3">#FFFF1D</color>
+    <color name="chip4">#1CD282</color>
+    <color name="chip5">#20DEF0</color>
+    <color name="chip6">#415AFE</color>
+    <color name="chip7">#BD59FF</color>
 </resources>

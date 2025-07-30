@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">Project1</string>
+    <string name="app_name">Calendar</string>
+    <string-array name="color_options">
+        <item>#F24C4F</item>
+        <item>#FF922C</item>
+        <item>#FFF71D</item>
+        <item>#1CD32B</item>
+        <item>#20DEF0</item>
+        <item>#415AFE</item>
+        <item>#BD59FF</item>
+    </string-array>
 </resources>

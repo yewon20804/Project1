@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:padding="16dp"
+    android:background="@color/gray70">
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mcv_firstDayOfWeek="monday"
+        app:mcv_showOtherDates="all"
+        app:mcv_selectionColor="@android:color/transparent"
+        app:mcv_tileSize="44dp"
+        app:mcv_headerTextAppearance="@style/CalendarHeaderStyle"
+        app:mcv_weekDayTextAppearance="@style/CalendarWeekDay">
+
+    </com.prolificinteractive.materialcalendarview.MaterialCalendarView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/scheduleContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:divider="?android:attr/dividerHorizontal"
+            android:showDividers="middle" />
+    </ScrollView>
+
+</LinearLayout>
