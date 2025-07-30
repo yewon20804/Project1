@@ -44,7 +44,7 @@
             android:layout_alignParentEnd="true"
             android:layout_margin="8dp"
             android:contentDescription="추가"
-            android:src="@drawable/ic_add" />
+            android:src="@drawable/plus" />
     </RelativeLayout>
 
     <!-- 요일 헤더 -->
