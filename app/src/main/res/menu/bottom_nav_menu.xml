@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_schedule"
+        android:icon="@drawable/nav_schedule_icon"
+        android:iconTint="@null"
+        android:title="시간표" />
+
+    <item
+        android:id="@+id/nav_calendar"
+        android:icon="@drawable/nav_calendar_icon"
+        android:iconTint="@null"
+        android:title="캘린더" />
+
+    <item
+        android:id="@+id/nav_timer"
+        android:icon="@drawable/nav_timer_icon"
+        android:iconTint="@null"
+        android:title="타이머" />
+
+    <item
+        android:id="@+id/nav_stats"
+        android:icon="@drawable/nav_stats_icon"
+        android:iconTint="@null"
+        android:title="통계" />
+
+</menu>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--네비게이션 선택 여부에 따른 텍스트 색상 변경-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="#1CD282" android:state_checked="true" />
+    <item android:color="#657770" android:state_checked="false" />
+</selector>

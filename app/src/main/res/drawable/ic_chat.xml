@@ -1,0 +1,10 @@
+<!--퍼즐 아이콘-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+  <path
+      android:pathData="M22,5.115C22,5.627 21.512,6 21,6V6C18.791,6 17,7.791 17,10C17,12.209 18.791,14 21,14V14C21.512,14 22,14.373 22,14.885V17.325C22,18.802 20.802,20 19.325,20H19C17.343,20 16.056,21.514 14.927,22.726C14.197,23.51 13.156,24 12,24C10.844,24 9.803,23.51 9.073,22.726C7.944,21.514 6.657,20 5,20V20C3.343,20 2,18.657 2,17V4C2,1.791 3.791,0 6,0H19.325C20.802,0 22,1.198 22,2.675V5.115Z"
+      android:fillColor="#ffffff"/>
+</vector>

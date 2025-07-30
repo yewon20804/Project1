@@ -1,0 +1,13 @@
+<!-- 통계화면에 사용되는 timer 아이콘-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+  <path
+      android:pathData="M22.8,25.2m-22.8,0a22.8,22.8 0,1 1,45.6 0a22.8,22.8 0,1 1,-45.6 0"
+      android:fillColor="#A8ECC8"/>
+  <path
+      android:pathData="M24,2.4C24,1.075 25.077,-0.012 26.396,0.12C28.726,0.354 31.013,0.928 33.184,1.827C36.096,3.033 38.742,4.801 40.97,7.029C43.199,9.258 44.967,11.904 46.173,14.816C47.072,16.987 47.646,19.274 47.88,21.604C48.012,22.923 46.925,24 45.6,24L28.8,24C26.149,24 24,21.851 24,19.2V2.4Z"
+      android:fillColor="#1CD282"/>
+</vector>
