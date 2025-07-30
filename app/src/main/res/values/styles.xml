@@ -38,9 +38,14 @@
 <!--    네비 스타일_ 김예원 작성-->
     <style name="CustomBottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
         <item name="itemTextColor">@color/bottom_nav_text_selector</item>
-        <item name="itemIconTint">@null</item>
+        <item name="itemIconTint">@color/bottom_nav_icon_selector</item>
         <item name="itemRippleColor">@android:color/transparent</item>
         <item name="itemBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="NavText" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:layout_marginTop">24dp</item> <!-- 아이콘과 텍스트 간격 -->
+        <item name="android:textSize">12sp</item> <!-- 글자 크기 -->
     </style>
 
 <!--    서윤님 스타일 코드-->

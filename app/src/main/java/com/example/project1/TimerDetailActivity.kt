@@ -21,7 +21,7 @@ class TimerDetailActivity : AppCompatActivity() {
     private lateinit var pauseButton: ImageButton
 
     private var isRunning = false
-    private var timeLeftInMillis: Long = 5 * 1000L // 25분으로 변경해야함 현재는 5초
+    private var timeLeftInMillis: Long = 25 * 60 * 1000L // 25분으로 변경해야함 현재는 5초
     private var timer: CountDownTimer? = null
 
     private var elapsedTime: Long = 0L
@@ -117,7 +117,7 @@ class TimerDetailActivity : AppCompatActivity() {
 
                 val resultIntent = Intent()
                 resultIntent.putExtra("subjectName", subjectName)
-                resultIntent.putExtra("studyTime", 5 ) // 25분으로 변경해야함 현재는 5초
+                resultIntent.putExtra("studyTime", 25 *60 ) // 25분으로 변경해야함 현재는 5초
 
                 setResult(RESULT_OK, resultIntent)
                 finish()
