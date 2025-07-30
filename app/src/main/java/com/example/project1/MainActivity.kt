@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
                     true
                 }
                 R.id.nav_calendar -> {
-//                    startActivity(Intent(this, CalendarActivity::class.java))
+                    startActivity(Intent(this, CalendarActivity::class.java))
                     overridePendingTransition(0, 0)
                     true
                 }

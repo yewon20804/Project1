@@ -33,7 +33,7 @@
             android:layout_height="match_parent"
             android:text="시간표"
             android:textColor="#FFFFFF"
-            android:textSize="20sp"
+            android:textSize="24sp"
             android:textStyle="bold"
             android:gravity="center_vertical" />
 

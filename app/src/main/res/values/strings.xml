@@ -9,7 +9,6 @@
         <item>#415AFE</item>
         <item>#BD59FF</item>
     </string-array>
-</resources>
     <string name="mon">월</string>
     <string name="tue">화</string>
     <string name="wed">수</string>

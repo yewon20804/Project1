@@ -87,7 +87,7 @@ class TimerActivity : AppCompatActivity() {
                     true
                 }
                 R.id.nav_calendar -> {
-//                    startActivity(Intent(this, CalendarActivity::class.java))
+                    startActivity(Intent(this, CalendarActivity::class.java))
                     true
                 }
                 R.id.nav_timer -> {

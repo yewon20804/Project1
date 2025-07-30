@@ -8,6 +8,19 @@
     android:padding="16dp"
     android:background="@color/gray70">
 
+    <TextView
+        android:id="@+id/calendarTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="캘린더"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/gray00"
+        android:gravity="start"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="12dp"/>
+
     <com.prolificinteractive.materialcalendarview.MaterialCalendarView
         android:id="@+id/calendarView"
         android:layout_width="match_parent"
@@ -38,5 +51,17 @@
             android:divider="?android:attr/dividerHorizontal"
             android:showDividers="middle" />
     </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        app:itemTextColor="@color/bottom_nav_text_selector"
+        app:menu="@menu/bottom_nav_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:labelVisibilityMode="labeled"/>
 
 </LinearLayout>
