@@ -1,5 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+  <!--   캘린더 스타일_ 정수빈 작성-->
+    <style name="CalendarHeaderStyle" parent="TextAppearance.MaterialCalendarWidget.Header">
+        <item name="android:textColor">@color/gray00</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CalendarDateTextStyle" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">@color/gray00</item>
+    </style>
+
+    <style name="CalendarWeekDayTextStyle" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textColor">@color/gray10</item>
+    </style>
+
+    <style name="CalendarWeekDay" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/gray10</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="CustomCalendarViewStyle">
+        <item name="mcv_selectionColor">@android:color/transparent</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@color/gray70</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
 <!--    네비 스타일_ 김예원 작성-->
     <style name="CustomBottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
         <item name="itemTextColor">@color/bottom_nav_text_selector</item>

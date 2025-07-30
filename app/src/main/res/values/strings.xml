@@ -1,5 +1,15 @@
 <resources>
-    <string name="app_name">시간표</string>
+    <string name="app_name">공부한조각</string>
+    <string-array name="color_options">
+        <item>#F24C4F</item>
+        <item>#FF922C</item>
+        <item>#FFF71D</item>
+        <item>#1CD32B</item>
+        <item>#20DEF0</item>
+        <item>#415AFE</item>
+        <item>#BD59FF</item>
+    </string-array>
+</resources>
     <string name="mon">월</string>
     <string name="tue">화</string>
     <string name="wed">수</string>
@@ -23,5 +33,8 @@
     <string name="back">뒤로가기</string>
     <string name="add_subject_description">과목 추가</string>
     <string name="timetable_scroll_area">시간표 스크롤 영역</string>
+
+    <string name="screen_calendar">Calendar</string>
+    <string name="screen_timetable">시간표</string>
 
 </resources>
