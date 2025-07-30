@@ -1,9 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Project1" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Base.Theme.Project1" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="bottomNavigationStyle">@style/CustomBottomNavigationView</item>
+        <item name="fontFamily">@font/pretendard_medium</item>
     </style>
 
     <style name="Theme.Project1" parent="Base.Theme.Project1" />

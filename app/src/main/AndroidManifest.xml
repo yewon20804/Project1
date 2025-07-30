@@ -16,21 +16,15 @@
         <activity android:name=".TimerDetailActivity" />
         <activity android:name=".StatisticsActivity" />
         <activity android:name=".AddSubjectActivity" />
-        <activity android:name=".MainActivity" />
         <activity android:name=".MainActivity"
-                  android:exported="true">
-           <intent-filter>
-               <action android:name="android.intent.action.MAIN"/>
-               <category android:name="android.intent.category.LAUNCHER"/>
-           </intent-filter>
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
         <activity android:name=".CalendarActivity" />
         <activity android:name=".TimerActivity" />
-         <intent-filter>
-            <action android:name="android.intent.action.MAIN"/>
-            <category android:name="android.intent.category.LAUNCHER"/>
-         </intent-filter>
-        </activity>
 
     </application>
 
