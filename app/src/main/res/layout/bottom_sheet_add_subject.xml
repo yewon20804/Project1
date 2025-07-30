@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--과목 추가 화면-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingHorizontal="18dp"
+    android:paddingVertical="35dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_sheet">
+
+    <!-- 상단 액션바 _취소/완료 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:id="@+id/btnCancel"
+            android:text="취소"
+            android:textSize="16sp"
+            android:layout_width="0dp"
+            android:textColor="#B4BDB6"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/btnConfirm"
+            android:text="완료"
+            android:textSize="16sp"
+            android:textColor="#B4BDB6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- 과목명 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="과목명"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/editSubjectName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="과목명"
+        android:background="@drawable/bg_input_box"
+        android:inputType="text"
+        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#455449"
+        android:textSize="16sp"/>
+
+    <!-- 색상 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="색상"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_marginTop="24dp"/>
+
+    <LinearLayout
+        android:id="@+id/colorContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:layout_marginTop="8dp">
+    </LinearLayout>
+
+</LinearLayout>

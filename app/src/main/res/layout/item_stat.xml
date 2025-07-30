@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--통계 화면 각 카드 ui-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bg_card"
+    android:layout_marginBottom="8dp">
+
+    <!-- 과목 이름 -->
+    <TextView
+        android:id="@+id/tvSubjectName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="모바일앱프로그래밍"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- 조각 + 시간 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <!-- 모은 조각 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_stat_item"
+            android:layout_marginEnd="12dp"
+            android:padding="16dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/ivPuzzleIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_chat"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/tvPuzzleLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="모은 조각"
+                    android:textColor="#B4BDB6"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvPuzzleCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24개"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingStart="28dp"
+                android:layout_marginTop="12dp"/>
+        </LinearLayout>
+
+        <!-- 누적 시간 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_stat_item"
+            android:padding="16dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/ivClockIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/timer"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/tvTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="누적 공부 시간"
+                    android:textColor="#B4BDB6"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvStudyTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:05:30"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingStart="28dp"
+                android:layout_marginTop="12dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

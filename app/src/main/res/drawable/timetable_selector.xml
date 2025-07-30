@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 눌렀을 때 -->
+    <item android:drawable="@drawable/timetable" android:state_checked="true" />
+    <!-- 안 눌렀을 때 -->
+    <item android:drawable="@drawable/timetable_unpressed" />
+</selector>

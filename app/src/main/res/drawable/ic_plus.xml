@@ -1,0 +1,10 @@
+<!--과목 추가 버튼에 사용되는 +아이콘-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+  <path
+      android:pathData="M25.2,0C27.851,0 30,2.149 30,4.8V18H43.2C45.851,18 48,20.149 48,22.8V25.2C48,27.851 45.851,30 43.2,30H30V43.2C30,45.851 27.851,48 25.2,48H22.8C20.149,48 18,45.851 18,43.2V30H4.8C2.149,30 0,27.851 0,25.2V22.8C-0,20.149 2.149,18 4.8,18H18V4.8C18,2.149 20.149,0 22.8,0H25.2Z"
+      android:fillColor="#B4BDB6"/>
+</vector>

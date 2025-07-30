@@ -1,0 +1,10 @@
+<!--타이머 진행 화면에 사용되는 play 버튼-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="32dp"
+    android:height="32dp"
+    android:viewportWidth="32"
+    android:viewportHeight="32">
+  <path
+      android:pathData="M30.691,13.498C32.436,14.703 32.436,17.297 30.691,18.502L11.916,31.463C9.917,32.843 7.2,31.402 7.2,28.961L7.2,3.039C7.2,0.598 9.917,-0.843 11.916,0.537L30.691,13.498Z"
+      android:fillColor="#ffffff"/>
+</vector>

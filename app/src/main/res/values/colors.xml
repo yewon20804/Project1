@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
+    <color name="black">#000000</color>
     <color name="gray00">#FFFFFFFF</color>
     <color name="gray10">#B4BDB6</color>
     <color name="gray40">#657770</color>
@@ -18,4 +18,6 @@
     <color name="chip5">#20DEF0</color>
     <color name="chip6">#415AFE</color>
     <color name="chip7">#BD59FF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="teal_200">#FF03DAC5</color>
 </resources>
